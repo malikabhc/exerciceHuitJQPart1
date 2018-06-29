@@ -3,9 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <title>Exercice 8</title>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-  			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  			  crossorigin="anonymous"></script>
+
   </head>
   <ul>
     <li>Html</li>
@@ -22,8 +20,14 @@
     <li>Symfony</li>
     <li>Laravel</li>
   </ol>
-<script>
-  $('ol').css({'color':'red'});
-</script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
+  <script>
+  $(function () {
+    $('ol > li').css('color','red');
+    //Autre possibilité : $('ol li').css('color','red');
+  });
+  </script>
 </body>
 </html>
